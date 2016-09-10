@@ -1,5 +1,5 @@
 @extends('plantilla.plantilla')
-
+<link rel="stylesheet" href="<?php echo URL::asset('css/ingreso.css') ?>" type="text/css">
 @section('content')
 <h1 id="tema">REGISTRO DE BIENES</h1>
 <section id="camposGenerales">
@@ -26,10 +26,7 @@
 		<label class="etiquetas" style="margin-top:3%;">Orden de Compra:</label>
 		<input type="text" name="ordenCompra" class="textfield" pattern=" " title= " " required style="margin-top:3%;"></input>
 	</div>	
-
-
 </section>
-
 <section id="camposBienes">
 	<div id="camposBienes1">
 		<div id="datosBienes">

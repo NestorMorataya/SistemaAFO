@@ -12,16 +12,20 @@ body
 	margin-top: 3%;
 	margin-bottom: 0%;
 }
-
-#contenedor
+#camposGenerales
 {
-	width:100%;
-	max-width: 1340px;
-	margin:0 auto;
-	overflow: hidden;
-
+	width: 80%;
+	background: white;
+	padding: 20px;
+	float: left;
+	box-sizing: border-box;
+	margin-left:10%;
+	margin-top:2%;
+	border:8px solid #808080;
+	border-radius: 3%;
+	border-color: #B40404;
+	font-family: tahoma;
 }
-
 #datosGenerales
 {
 	margin-top:0%;
@@ -39,21 +43,7 @@ body
 
 }
 
-#camposGenerales
-{
-	width: 80%;
-	background: white;
-	padding: 20px;
-	float: left;
-	box-sizing: border-box;
-	margin-left:10%;
-	margin-top: 2%;
-	margin:5 auto;
-	border:8px solid #808080;
-	border-radius: 3%;
-	border-color: #B40404;
-	font-family: tahoma;
-}
+
 
 #camposGenerales h3
 {
@@ -126,7 +116,6 @@ body
 	box-sizing: border-box;
 	margin-left:10%;
 	margin-top: 5%;
-	margin:5 auto;
 	border:8px solid #808080;
 	border-radius: 3%;
 	border-color: #B40404;
@@ -173,24 +162,6 @@ body
 	border-left-style: dashed;
 }
 
-#cierre
-{
-	background: #B40404;
-	width: 100%;
-	height: 60px;
-	margin-top: 5%;
-	text-align: center;
-	color: white;
-}
-
-<<<<<<< HEAD
-#cierre a
-{
-	float: center;
-	color: white;
-	margin-top:-1%;
-
-}
 #consultas
 {
 	width: auto;
@@ -207,8 +178,7 @@ body
 	border-color: #B40404;
 	font-family: tahoma;
 }
-=======
->>>>>>> 58f2df95b150178ce3c8263302255d13bfb037b9
+
 
 
 @media screen and (max-width: 1050px)
@@ -296,7 +266,7 @@ body
 		margin-top: -10%;
 		margin:5 auto;
 	}
-    
+	
 
 	.etiquetas
 	{
@@ -333,7 +303,7 @@ body
 		border-left-style:none;
 	}
 
-#consultas
+	#consultas
 	{
 		width: 100%;
 		margin-left: 0%;
@@ -343,9 +313,6 @@ body
 
 }
 
-<<<<<<< HEAD
-
-=======
 @media screen and (max-width: 400px)
 {
 	.etiquetas
@@ -354,4 +321,4 @@ body
 
 	}
 }
->>>>>>> 58f2df95b150178ce3c8263302255d13bfb037b9
+

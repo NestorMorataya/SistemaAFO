@@ -2,10 +2,10 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use DB;
 
-class ConsultaController extends Controller {
+use Illuminate\Http\Request;
+
+class IngresoController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -14,23 +14,7 @@ class ConsultaController extends Controller {
 	 */
 	public function index()
 	{
-
-         /*
-		 $bien = DB::table('bien')->orderBy('bien_pk','ASC')->Paginate(100)->setPath('');
-		return view('consulta.consulta',compact('bien'));
-        
-        */
-		
-
-		$bien=DB::table('bien')
-		->join('inventario', 'bien.bien_pk', '=', 'inventario.bien_fk')
-		->join('marca', 'bien.marca_fk', '=', 'marca.marca_pk')
-		->join('ubicacion', 'inventario.ubicacion_fk', '=', 'ubicacion_pk')
-		->select('bien.bien_pk', 'bien.identificacion_fk', 'nombre_marca','descripcion_equipo','modelo','serie','ubicacion','estado_fk')
-		->orderBy('bien_pk','ASC')->Paginate(50)->setPath('');
-		return view('consulta.consulta',compact('bien'));
-		
-
+		//
 	}
 
 	/**
@@ -40,7 +24,7 @@ class ConsultaController extends Controller {
 	 */
 	public function create()
 	{
-		
+		//
 	}
 
 	/**

@@ -11,28 +11,34 @@
 			@endif
 		</div>
 		<div id="subtitulo">
-			<img src="img/Odontologia.png">
+			<img src="<?php echo URL::asset('img/Odontologia.png') ?>">
 			<h1>FACULTAD DE ODONTOLOGIA</h1>
 			<h2>UNIVERSIDAD DE EL SALVADOR</h2>
 		</div>
 		<section class="menu">
 			<div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5a6ffbbc076f7c182329fdbd1823e51d4994487f
 		        <nav>
 		            <ul>
-		                <li><a href="#">Registro</a></li>
+		                <li><a href="{{url('ingreso')}}">Registro</a></li>
 		                <li><a href="#">Traslado</a></li>
 		                <li><a href="#">Préstamo</a></li>
 		                <li><a href="#">Descargo</a></li>
 		                <li><a href="#">Formularios</a></li>
-		                <li><a href=" {{ route('consulta.consultas.index') }} ">Consultar</a></li>
+		                <li><a href="{{url('consulta')}}">Consultar</a></li>
 		                <li><a href="#">Historial</a></li>
 		                <li><a href="#">Usuarios</a></li>	   
 		            </ul>
 		   		</nav>
 		   	</div>
     	</section>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5a6ffbbc076f7c182329fdbd1823e51d4994487f
 	</header>
 </body>
 </html>
