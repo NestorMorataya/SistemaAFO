@@ -1,4 +1,4 @@
-<link rel="stylesheet"  href="{{asset('css/boot/bootstrap.css')}}">
+<link rel="stylesheet"  href="{{asset('css/consulta.css')}}">
 @extends('plantilla.plantilla')
 
 @section('content')

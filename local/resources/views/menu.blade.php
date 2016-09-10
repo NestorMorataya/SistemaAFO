@@ -17,7 +17,7 @@
 		</div>
 		<section class="menu">
 			<div>
-<<<<<<< HEAD
+
 		        <nav>
 		            <ul>
 		                <li><a href="#">Registro</a></li>
@@ -32,22 +32,7 @@
 		   		</nav>
 		   	</div>
     	</section>
-=======
-				<nav>
-					<ul>
-						<li><a href="#">Registro</a></li>
-						<li><a href="#">Traslado</a></li>
-						<li><a href="#">Préstamo</a></li>
-						<li><a href="#">Descargo</a></li>
-						<li><a href="#">Formularios</a></li>
-						<li><a href="#">Consultar</a></li>
-						<li><a href="#">Historial</a></li>
-						<li><a href="#">Usuarios</a></li>	   
-					</ul>
-				</nav>
-			</div>
-		</section>
->>>>>>> 58f2df95b150178ce3c8263302255d13bfb037b9
+
 	</header>
 </body>
 </html>
