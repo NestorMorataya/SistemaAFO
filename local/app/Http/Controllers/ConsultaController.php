@@ -18,15 +18,22 @@ class ConsultaController extends Controller {
          /*
 		 $bien = DB::table('bien')->orderBy('bien_pk','ASC')->Paginate(100)->setPath('');
 		return view('consulta.consulta',compact('bien'));
+
+->join('marca', 'bien.marca_fk', '=', 'marca.marca_pk')
+		->join('ubicacion', 'inventario.ubicacion_fk', '=', 'ubicacion_pk')
+
+
         
         */
 		
 
 		$bien=DB::table('bien')
-		->join('inventario', 'bien.bien_pk', '=', 'inventario.bien_fk')
-		->join('marca', 'bien.marca_fk', '=', 'marca.marca_pk')
-		->join('ubicacion', 'inventario.ubicacion_fk', '=', 'ubicacion_pk')
-		->select('bien.bien_pk', 'bien.identificacion_fk', 'nombre_marca','descripcion_equipo','modelo','serie','ubicacion','estado_fk')
+		->leftJoin('inventario as inventario', 'bien.bien_pk', '=', 'inventario.bien_fk', 'left outer')
+		->leftJoin('marca', 'bien.marca_fk', '=', 'marca.marca_pk', 'left outer')
+		->leftJoin('ubicacion', 'inventario.ubicacion_fk', '=', 'ubicacion_pk', 'left outer')
+		->leftJoin('unidad', 'inventario.unidad_fk', '=', 'unidad.unidad_pk', 'left outer')
+		->leftJoin('identificacion', 'bien.identificacion_fk', '=', 'identificacion.identificacion_pk', 'left outer')
+		->select('bien.bien_pk', 'bien.identificacion_fk', 'nombre_marca','descripcion_equipo','modelo','serie','ubicacion','estado_fk','nombre_unidad','valor_adquisicion','bien_principal_fk')
 		->orderBy('bien_pk','ASC')->Paginate(50)->setPath('');
 		return view('consulta.consulta',compact('bien'));
 		

@@ -17,10 +17,7 @@
 		</div>
 		<section class="menu">
 			<div>
-<<<<<<< HEAD
 
-=======
->>>>>>> 5a6ffbbc076f7c182329fdbd1823e51d4994487f
 		        <nav>
 		            <ul>
 		                <li><a href="{{url('ingreso')}}">Registro</a></li>
@@ -35,10 +32,7 @@
 		   		</nav>
 		   	</div>
     	</section>
-<<<<<<< HEAD
 
-=======
->>>>>>> 5a6ffbbc076f7c182329fdbd1823e51d4994487f
 	</header>
 </body>
 </html>

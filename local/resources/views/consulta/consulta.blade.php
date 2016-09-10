@@ -1,7 +1,6 @@
-<<<<<<< HEAD
+
 <link rel="stylesheet"  href="{{asset('css/consulta.css')}}">
-=======
->>>>>>> 5a6ffbbc076f7c182329fdbd1823e51d4994487f
+
 @extends('plantilla.plantilla')
 <link rel="stylesheet" href="<?php echo URL::asset('css/consulta.css') ?>" type="text/css">
 <link rel="stylesheet" href="<?php echo URL::asset('css/boot/tbla.css') ?>" type="text/css">
@@ -19,6 +18,9 @@
 				<th class="encabezado">SERIE</th>
 				<th class="encabezado">UBICACIÓN</th>
 				<th class="encabezado">ESTADO</th>
+				<th class="encabezado">UNIDAD</th>
+				<th class="encabezado">VALOR</th>
+				<th class="encabezado">BIEN PRINCIPAL</th>
 			</thead>
 			<tbody>
 				@foreach($bien as $bienes)
@@ -31,6 +33,9 @@
 					<td> {{ $bienes->serie  }}  </td>
 					<td> {{ $bienes->ubicacion  }}  </td>
 					<td> {{ $bienes->estado_fk  }}  </td>
+					<td> {{ $bienes->nombre_unidad  }}  </td>
+					<td> {{ $bienes->valor_adquisicion  }}  </td>
+					<td> {{ $bienes->bien_principal_fk  }}  </td>
 				</tr>
 				@endforeach
 			</tbody>
